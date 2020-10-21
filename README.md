@@ -4,6 +4,7 @@ Web Log data analysis is done using Spark Scala.
 This is a data pipe line implementated for web log data analysis in Cloudera Hadoop using Spark,Scala, Spark-SQL, DataFrame, and HDFS.
 
 1. WebLogAnalyzer.scala : Spark implementation for parsing weblogs given in log file. These are webserver logs. There are 4 tasks that are to be done by this spark scala script.       
+
     Part 1 : Sessionize the web log by IP. Sessionize = aggregrate all page hits by visitor/IP during a fixed time window. 
     Part 2: Determine the average session time 
     Part 3: Determine unique URL visits per session. To clarify, count a hit to a unique URL only once per session. 
@@ -17,6 +18,7 @@ This is a data pipe line implementated for web log data analysis in Cloudera Had
    e.g.        spark-submit  --class "com.paypay.impl.WebLogAnalyzer" --master local[*]   /home/cloudera/Downloads/scalaworkspace/impl/target/impl-0.0.1-SNAPSHOT.jar  hdfs://localhost:8020/user/cloudera/input hdfs://localhost:8020/user/cloudera/output
   
 6. once the spark-submit job is completed four output directories will be created for  each part
+
     Part 1 : Sessionize the web log by IP --> <hdfs output folder path>/SessionizeByIP/
             hdfspath =hdfs://localhost:8020/user/cloudera/output/SessionizeByIP/
   
