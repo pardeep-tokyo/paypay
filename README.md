@@ -31,3 +31,10 @@ This is a data pipe line implementated for web log data analysis in Cloudera Had
     Part 4: Find the most engaged users, ie the IPs with the longest session times Session window time is chosen to be 15 minutes 
                --> <hdfs output folder path>/UsersWithLongestSessionTime/
             hdfspath =hdfs://localhost:8020/user/cloudera/output/UsersWithLongestSessionTime/
+
+7. sample input data is saved/uploaded in the directory https://github.com/pardeep-tokyo/paypay/tree/main/impl/input
+8. all the output directory for all the four parts are given below:
+    https://github.com/pardeep-tokyo/paypay/tree/main/impl/output/AverageSessionTime
+    https://github.com/pardeep-tokyo/paypay/tree/main/impl/output/SessionizeByIP
+    https://github.com/pardeep-tokyo/paypay/tree/main/impl/output/UniqueURLsPerSession
+    https://github.com/pardeep-tokyo/paypay/tree/main/impl/output/UsersWithLongestSessionTime
