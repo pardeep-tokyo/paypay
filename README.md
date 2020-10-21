@@ -32,8 +32,12 @@ This is a data pipe line implementated for web log data analysis in Cloudera Had
                --> <hdfs output folder path>/UsersWithLongestSessionTime/
             hdfspath =hdfs://localhost:8020/user/cloudera/output/UsersWithLongestSessionTime/
 
-7. sample input data is saved/uploaded in the directory https://github.com/pardeep-tokyo/paypay/tree/main/impl/input
-8. all the output directory for all the four parts are given below:
+7. sample input data is saved/uploaded in the directory
+
+    https://github.com/pardeep-tokyo/paypay/tree/main/impl/input
+    
+8. all the final  output files for all the four parts are placed in the below directories:
+
     https://github.com/pardeep-tokyo/paypay/tree/main/impl/output/AverageSessionTime
     https://github.com/pardeep-tokyo/paypay/tree/main/impl/output/SessionizeByIP
     https://github.com/pardeep-tokyo/paypay/tree/main/impl/output/UniqueURLsPerSession
